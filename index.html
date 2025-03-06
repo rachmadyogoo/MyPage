@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" type="x-icon" href="logo/logoku.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="https://kit.fontawesome.com/29788b9bda.js" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Rachmad Yogo</title>
+</head>
+<body class="bg-gray-100 min-h-screen flex flex-col font-[Poppins]">
+    <!-- Navbar -->
+    <nav class="bg-black relative z-10 sticky top-0">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex items-center">
+                    <img class="h-8 w-auto" src="mad.png" alt="Your Company">
+                </div>
+                
+                <!-- Hamburger Button -->
+                <button id="menu-button" class="md:hidden text-white focus:outline-none">
+                    ☰
+                </button>
+
+                <!-- Menu -->
+                <div id="menu" class="hidden md:flex space-x-4">
+                    <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-white" onclick="Skroll(event)">Home</a>
+                    <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-white" onclick="Skroll2(event)">Tools</a>
+                    <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-white" onclick="Skroll3(event)">Practising</a>
+                    <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-white" onclick="Skroll4(event)">Experience</a>
+                    <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-white" onclick="Skroll5(event)">Project</a>
+                    <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-white" onclick="Skroll6(event)">Contact Me</a>
+                </div>
+            </div>
+            <script>
+                function Skroll(event) {
+                  event.preventDefault(); // Mencegah perilaku default link
+                  document.getElementById("home").scrollIntoView({ behavior: "smooth" });
+                }
+                function Skroll2(event) {
+                    event.preventDefault(); // Mencegah perilaku default link
+                    document.getElementById("tools").scrollIntoView({ behavior: "smooth" });
+                  }
+                  function Skroll3(event) {
+                    event.preventDefault(); // Mencegah perilaku default link
+                    document.getElementById("practising").scrollIntoView({ behavior: "smooth" });
+                  }
+                  function Skroll4(event) {
+                    event.preventDefault(); // Mencegah perilaku default link
+                    document.getElementById("experience").scrollIntoView({ behavior: "smooth" });
+                  }
+                  function Skroll5(event) {
+                    event.preventDefault(); // Mencegah perilaku default link
+                    document.getElementById("project").scrollIntoView({ behavior: "smooth" });
+                  }
+                  function Skroll6(event) {
+                    event.preventDefault(); // Mencegah perilaku default link
+                    document.getElementById("call").scrollIntoView({ behavior: "smooth" });
+                  }
+            </script>
+              
+
+            <!-- Mobile Menu (Dropdown) -->
+            <div id="mobile-menu" class="hidden absolute right-4 top-16 bg-black p-2 rounded-md w-52">
+                <a href="#" class="block text-white text-sm py-1" onclick="Skroll(event)">Home</a>
+                <a href="#" class="block text-white text-sm py-1" onclick="Skroll2(event)">Tools</a>
+                <a href="#" class="block text-white text-sm py-1" onclick="Skroll3(event)">Practising</a>
+                <a href="#" class="block text-white text-sm py-1" onclick="Skroll4(event)">Experience</a>
+                <a href="#" class="block text-white text-sm py-1" onclick="Skroll5(event)">Project</a>
+                <a href="#" class="block text-white text-sm py-1" onclick="Skroll6(event)">Contact Me</a>
+            </div>
+        </div>
+    </nav>
+
+    <script>
+        const menuButton = document.getElementById('menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
+    <!-- Content -->
+    <div id="home" class="bg-white flex flex-col md:flex-row justify-center items-center flex-grow p-12 space-y-5 md:space-y-0 md:space-x-10">
+        <div class="text-center md:text-left">
+            <p class="text-3xl font-bold pb-2 md:text-4xl">Rachmad Yogo</p>
+            <p class="text-lg text-gray-600">Vfx Enthusiast</p>
+        </div>
+        <div>
+            <img class="w-64 md:w-64 rounded-lg " src="haha.jpg" alt="hahae">
+        </div>
+        <div class="flex md:inline-block">
+            <div class="p-5">
+                <a href="https://www.instagram.com/mamadmurdok/?hl=eg">
+                    <i class="fa-brands fa-instagram text-3xl">
+                    </i>
+                </a>
+            </div>
+            <div class="p-5">
+                <a href="https://www.youtube.com/@rachmadyogo2815">
+                    <i class="fa-brands fa-youtube text-3xl">
+                    </i>
+                </a>
+            </div>
+            <div class="p-5">
+                <a href="https://www.tiktok.com/@mamadmurdok">
+                    <i class="fa-brands fa-tiktok text-3xl">
+                    </i>
+                </a>
+            </div>
+            <div class="p-5">
+                <a href="https://www.facebook.com/rachmad.yogo">
+                    <i class="fa-brands fa-facebook text-3xl">
+                    </i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="justify-center items-center flex p-4 bg-white">
+            <img id="gambar" class="w-6 md:w-12" src="logo/logoku.png" alt="" srcset="">
+        </div>
+        <script>
+            window.addEventListener("scroll", function () {
+                let scrollY = window.scrollY;
+                let gambar = document.getElementById("gambar");
+        
+                let rotasi = scrollY % 360; // Menghindari angka rotasi yang besar
+                gambar.style.transform = `rotate(${rotasi}deg)`;
+            });
+        </script>
+    </div>
+    <div class="p-10 bg-black justify-center items-center" id="tools">
+        <h2 class="text-2xl font-bold text-center text-white">Tools</h2>
+        <p class="text-center p-2 text-white text-sm md:text-base">Some tool that i used to make it</p>
+        <div class="justify-center items-center flex">
+            <img class="w-16 md:w-24 p-3" src="ps.png" alt="">
+            <img class="w-16 md:w-24 p-3" src="ae.png" alt="">
+            <img class="w-16 md:w-24 p-3" src="bdr.png" alt="">
+            <img class="w-16 md:w-24 p-3" src="f.png" alt="">
+            <img class="w-16 md:w-24 p-3" src="c.png" alt="">
+        </div>
+    </div>
+
+    <div class="bg-white p-10 justify-center items-center" id="practising">
+        <h2 class="text-2xl font-bold text-center">Practising</h2>
+        <p class="text-black text-center p-2 text-sm md:text-base">Still have to learn and practice to get better</p>
+        <div class="marquee-text flex">
+            <div class="marquee-text-track">
+              <p class="text-base  md:text-2xl font-bold p-2">Poster Design</p>
+              <p class="text-base  md:text-2xl font-bold p-2">Feed Design</p>
+              <p class="text-base  md:text-2xl font-bold p-2">3D Design</p>
+              <p class="text-base  md:text-2xl  font-bold p-2">Motion Graphic</p>
+              <p class="text-base  md:text-2xl font-bold p-2">Manipulation Design</p>
+              <p class="text-base  md:text-2xl font-bold p-2">Logo Design</p>
+              <p class="text-base  md:text-2xl font-bold p-2">UI Design</p>
+              <p class="text-base  md:text-2xl font-bold p-2" aria-hidden="true">Poster Design</p>
+              <p class="text-base  md:text-2xl  font-bold p-2" aria-hidden="true">Feed Design</p>
+              <p class="text-base  md:text-2xl font-bold p-2" aria-hidden="true">3D Design</p>
+              <p class="text-base  md:text-2xl font-bold p-2" aria-hidden="true">Motion Graphic</p>
+              <p class="text-base  md:text-2xl  font-bold p-2" aria-hidden="true">Manipulation Design</p>
+              <p class="text-base  md:text-2xl font-bold p-2" aria-hidden="true">Logo Design</p>
+              <p class="text-base  md:text-2xl  font-bold p-2" aria-hidden="true">UI Design</p>
+            </div>
+          </div>
+    </div>   
+    <div class="bg-black p-5 items-center flex flex-col" id="experience">
+        <h2 class="text-2xl font-bold text-white p-2">Experience</h2>
+        <h2 class="text-base font-bold text-white">Career Clinic (Oct 2024 - March 2025)</h2>
+        <h2 class="text-sm text-white">Staff of Design Graphic Intern</h2>
+        <div class="marquee-text flex w-full mt-5">
+            <div class="marquee-text-track">
+                <img class="w-52 md:w-52 rounded-lg  p-2" src="cc/13.png" alt="">
+                <img class="w-52 md:w-52 rounded-lg  p-2" src="cc/20.png" alt="">
+                <img class="w-52 md:w-52 rounded-lg  p-2" src="cc/17.png" alt="">
+                <img class="w-52 md:w-52 rounded-lg  p-2" src="cc/18.png" alt="">
+                <img class="w-52 md:w-52 rounded-lg  p-2" src="cc/19.png" alt="">
+                <img class="w-52 md:w-52 rounded-lg  p-2" src="cc/21.png" alt="">
+                <img class="w-52 md:w-52 rounded-lg  p-2" src="cc/22.png" alt="">
+                <img class="w-52 md:w-52 rounded-lg  p-2" src="cc/13.png" alt="" aria-hidden="true">
+                <img class="w-52 md:w-52 rounded-lg  p-2" src="cc/20.png" alt="" aria-hidden="true">
+                <img class="w-52 md:w-52 rounded-lg  p-2" src="cc/17.png" alt="" aria-hidden="true">
+                <img class="w-52 md:w-52 rounded-lg  p-2" src="cc/18.png" alt="" aria-hidden="true">
+                <img class="w-52 md:w-52 rounded-lg  p-2" src="cc/19.png" alt="" aria-hidden="true">
+                <img class="w-52 md:w-52 rounded-lg  p-2" src="cc/21.png" alt="" aria-hidden="true">
+                <img class="w-52 md:w-52 rounded-lg  p-2" src="cc/22.png" alt="" aria-hidden="true">
+            </div>
+        </div>
+        <div class="items-center p-2">
+            <a href="https://www.instagram.com/careerclinic_id/?hl=eg" class="bg-white p-1 rounded-lg text-sm">And More</a>
+        </div>
+    </div>
+    <div class="bg-white p-5 items-center flex flex-col" id="project">
+        <h2 class="text-2xl font-bold p-2">Project</h2>
+        <h2 class="text-base font-bold">Poster Design</h2>
+        <div class="marquee-text flex w-full mt-5">
+            <div class="marquee-text-track">
+                <img class="w-52 md:w-52 rounded-lg  p-2" src="pstr/1.jpg" alt="">
+                <img class="w-52 md:w-52 rounded-lg  p-2" src="pstr/2.jpeg" alt="">
+                <img class="w-52 md:w-52 rounded-lg  p-2" src="pstr/3.jpeg" alt="">
+                <img class="w-52 md:w-52 rounded-lg  p-2" src="pstr/4.jpeg" alt="">
+                <img class="w-52 md:w-52 rounded-lg  p-2" src="pstr/5.jpeg" alt="">
+                <img class="w-52 md:w-52 rounded-lg  p-2" src="pstr/6.jpg" alt="">
+                <img class="w-52 md:w-52 rounded-lg  p-2" src="pstr/7.jpeg" alt="">
+                <img class="w-52 md:w-52 rounded-lg  p-2" src="pstr/1.jpg" alt="" aria-hidden="true">
+                <img class="w-52 md:w-52 rounded-lg  p-2" src="pstr/2.jpeg" alt="" aria-hidden="true">
+                <img class="w-52 md:w-52 rounded-lg  p-2" src="pstr/3.jpeg" alt="" aria-hidden="true">
+                <img class="w-52 md:w-52 rounded-lg  p-2" src="pstr/4.jpeg" alt="" aria-hidden="true">
+                <img class="w-52 md:w-52 rounded-lg  p-2" src="pstr/5.jpeg" alt="" aria-hidden="true">
+                <img class="w-52 md:w-52 rounded-lg  p-2" src="pstr/6.jpg" alt="" aria-hidden="true">
+                <img class="w-52 md:w-52 rounded-lg  p-2" src="pstr/7.jpeg" alt="" aria-hidden="true">
+                <!-- Duplicate images for smooth infinite scroll -->
+            </div>
+        </div>
+    </div>
+    <div class="bg-white p-5 items-center flex flex-col" >
+        <h2 class="text-base font-bold">3D Design</h2>
+        <div class="marquees-text flex w-full mt-5 items-center "> 
+            <div class="marquees-text-track justify-center items-center flex">
+                <img class="w-[400px] h-[229px]  rounded-lg  p-2" src="video/6.jpeg" alt="">
+                <img class="w-52 md:w-52 rounded-lg  p-2" src="video/1.jpeg" alt="">
+                <img class="w-52 md:w-52 rounded-lg  p-2" src="video/2.jpeg" alt="">
+                <img class="w-52 md:w-52 rounded-lg  p-2" src="video/3.jpeg" alt="">
+                <img class="w-52 md:w-52 rounded-lg  p-2" src="video/4.jpeg" alt="">
+                <img class="w-52 md:w-52 rounded-lg  p-2" src="video/5.jpeg" alt="">
+                <img class="w-52 md:w-52 rounded-lg  p-2" src="video/7.jpeg" alt="">
+                <img class="w-[400px] h-[229px] rounded-lg  p-2" src="video/6.jpeg" alt="" aria-hidden="true">
+                <img class="w-52 md:w-52 rounded-lg  p-2" src="video/1.jpeg" alt="" aria-hidden="true">
+                <img class="w-52 md:w-52 rounded-lg  p-2" src="video/2.jpeg" alt="" aria-hidden="true">
+                <img class="w-52 md:w-52 rounded-lg  p-2" src="video/3.jpeg" alt="" aria-hidden="true">
+                <img class="w-52 md:w-52 rounded-lg  p-2" src="video/4.jpeg" alt="" aria-hidden="true">
+                <img class="w-52 md:w-52 rounded-lg  p-2" src="video/5.jpeg" alt="" aria-hidden="true">
+                <img class="w-52 md:w-52 rounded-lg  p-2" src="video/7.jpeg" alt="" aria-hidden="true">
+            </div>
+        </div>
+    </div>
+    <div class="bg-white p-5 items-center flex flex-col">
+        <h2 class="text-base font-bold ">Logo Design</h2>
+        <div class="marquee-text flex w-full mt-5">
+            <div class="marquee-text-track">
+                <img class="w-32 md:w-52 rounded-lg  p-2" src="logo/logoku.png" alt="">
+                <img class="w-32 md:w-52 rounded-lg  p-2" src="logo/2.jpeg" alt="">
+                <img class="w-32 md:w-52 rounded-lg  p-2" src="logo/3.png" alt="">
+                <img class="w-32 md:w-52 rounded-lg  p-2" src="logo/logoku.png" alt="" aria-hidden="true">
+                <img class="w-32 md:w-52 rounded-lg  p-2" src="logo/2.jpeg" alt="" aria-hidden="true">
+                <img class="w-32 md:w-52 rounded-lg  p-2" src="logo/3.png" alt="" aria-hidden="true">
+                <!-- Duplicate images for smooth infinite scroll -->
+            </div>
+        </div>
+    </div>
+<style>
+    .marquee-text {
+        overflow: clip;
+      }
+      
+      .marquee-text-track {
+        display: flex;
+        padding-left: 1rem;
+        gap: 1rem;
+        width: max-content;
+        animation: marquee-move-text var(--speed, 60s) linear infinite var(
+            --direction,
+            forwards
+          );
+      }
+      
+      @keyframes marquee-move-text {
+        to {
+          transform: translateX(-50%);
+        }
+      }
+</style>
+<style>
+    .marquees-text {
+        overflow: clip;
+      }
+      
+      .marquees-text-track {
+        display: flex;
+        padding-left: 0rem;
+        gap: 0rem;
+        width: max-content;
+        animation: marquees-move-text var(--speed, 50s) linear infinite var(
+            --direction,
+            forwards
+          );
+      }
+      
+      @keyframes marquees-move-text {
+        to {
+          transform: translateX(-50%);
+        }
+      }
+</style>
+<div class="bg-black p-10" id="call">
+    <h2 class="text-2xl text-white font-bold text-center">Contact Me</h2>
+    <div class="justify-center items-center flex">
+       <p class="text-white pb-4">Lets Connected</p>
+    </div>
+    <div class="justify-center items-center flex">
+        <form action="https://formspree.io/f/myyrlokj" method="post" class="items-center justify-center flex flex-col">
+            <input id="form" type="text" name="name" placeholder="Masukkan nama" required class="p-2 rounded-lg">
+            <br>
+            <input id="form" type="email" name="email" required placeholder="Masukkan email" class="p-2 rounded-lg">
+            <br>
+            <textarea id="form" name="message" required placeholder="Komentar Anda" class="p-2 rounded-lg"></textarea>
+            <br>
+            <button id="tekan" type="submit" class="p-1 rounded-lg bg-white">Send</button>
+        </form>
+    </div>
+    <div class="justify-center items-center flex pt-12">
+        <p class="text-[12px] md:text-sm text-gray-400">© 2025 Rachmad Yogo, All Rights Reserved</p>
+    </div>
+</div>
+</body>
+</html>
